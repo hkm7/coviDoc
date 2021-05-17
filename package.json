@@ -1,0 +1,27 @@
+{
+  "name": "covidoc",
+  "version": "1.0.0",
+  "description": "A discord bot that notifies the specifics of covid 19 related data and vaccination availability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/bot.js",
+    "dev": "nodemon ./src/bot.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hkm7/coviDoc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hkm7/coviDoc/issues"
+  },
+  "homepage": "https://github.com/hkm7/coviDoc#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^9.0.2"
+  }
+}
