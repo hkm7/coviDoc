@@ -15,16 +15,16 @@ client.on('message',(message) =>{
         return;
     }
     if(message.content==="<@!843730517861859338>"){
-        message.channel.send("Hey I'm a little busy rn, maybe we'll talk later :wink:")
+        message.channel.send("Hello! Use + before commands. For extended help, Type +help.")
     }
     if(message.content.startsWith(prefix)){
         const [CMD_NAME, ...args] = message.content
             .trim()
             .substring(prefix.length)
             .split(/\s+/);
-        // if(CMD_NAME==="test"){
-        //     message.channel.send(`${args[0]}`+' tested negative. Stay home stay safe');
-        // }
+        if(CMD_NAME==="test"){
+            message.channel.send(`${args[0]}`+' tested negative. Stay home stay safe');
+        }
         
         console.log(CMD_NAME);
         console.log(args);
